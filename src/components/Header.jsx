@@ -6,7 +6,14 @@ import { useEffect, useState } from "react"
 
 
 export function Header() {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(() => {
+        const savedTheme = localStorage.getItem('dark');
+        if (savedTheme !== null) {
+            return JSON.parse(savedTheme);
+        }
+
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    });
 
     useEffect(() => {
         if (isDark) {
@@ -16,7 +23,11 @@ export function Header() {
         }
     }, [isDark]);
 
-    const handleClick = () => setIsDark(!isDark);
+    const handleClick = () => {
+        const newTheme = !isDark;
+        setIsDark(newTheme);
+        localStorage.setItem('dark', JSON.stringify(newTheme));
+    }
 
     return (
         <div
