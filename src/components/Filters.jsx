@@ -1,6 +1,6 @@
 import { Button } from "./Button"
 
-export function Filters({ setFilter }) {
+export function Filters({ filter, setFilter }) {
 
     const handleFilterClick = (event) => {
         setFilter(event.target.textContent)
@@ -12,9 +12,9 @@ export function Filters({ setFilter }) {
             mb-6 md:mb-0">Extensions List</h2>
 
             <div className="flex place-content-between mb-2 md:gap-3 md:mb-0">
-                <Button onClick={handleFilterClick}>All</Button>
-                <Button onClick={handleFilterClick}>Active</Button>
-                <Button onClick={handleFilterClick}>Inactive</Button>
+                <Button isSelected={filter === 'All'} onClick={handleFilterClick}>All</Button>
+                <Button isSelected={filter === 'Active'} onClick={handleFilterClick}>Active</Button>
+                <Button isSelected={filter === 'Inactive'} onClick={handleFilterClick}>Inactive</Button>
             </div>
         </div>
     )

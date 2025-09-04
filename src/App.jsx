@@ -11,7 +11,7 @@ function App() {
     <main className="light-gradient dark:dark-gradient min-h-screen flex flex-col items-center">
       <section className="w-[343px] my-10 md:w-[672px] lg:w-[900px] xl:w-[1120px]">
         <Header />
-        <Filters setFilter={setFilter} />
+        <Filters filter={filter} setFilter={setFilter} />
         <CardContainer filter={filter} />
 
       </section>
