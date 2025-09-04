@@ -4,6 +4,12 @@ Un administrador de extensiones simple e intuitivo. Permite visualizar, filtrar 
 
 ---
 
+## 📸 Vista previa
+
+![Preview del Extension Manager](./src/assets/preview.gif)
+
+---
+
 ## ✨ Funcionalidades
 
 - 🔍 **Filtrado de extensiones**:  
