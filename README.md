@@ -1,12 +1,10 @@
-# React + Vite
+# Extensions-manager
+Se trata de un programa capaz de organizar un grupo de extensiones a partir de un .json y poder realizar acciones sobre ellas
+<img width="1268" height="644" alt="image" src="https://github.com/user-attachments/assets/84a16fcb-258b-4a0f-945d-2adcbb2188b3" />
+<img width="1305" height="648" alt="image" src="https://github.com/user-attachments/assets/25c0a683-6ddf-4af3-9349-39b047dfa6e4" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Datos:
+Los datos son tomados de un .json
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
